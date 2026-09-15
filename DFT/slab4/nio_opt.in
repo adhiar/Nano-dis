@@ -1,0 +1,70 @@
+&CONTROL
+    calculation  = 'relax'
+    prefix       = 'NiO100_4L_PBEU5_relax'
+    outdir       = './tmp'
+    pseudo_dir   = './pseudopot'
+    restart_mode = 'from_scratch'
+    verbosity    = 'high'
+/
+&SYSTEM
+    ibrav     = 0
+    nat       = 16
+    ntyp      = 3
+    ecutwfc   = 50
+    ecutrho   = 400
+    nspin     = 2
+    input_dft = 'PBE'
+    occupations = 'smearing'
+    smearing = 'mv'
+    degauss = 0.01
+    starting_magnetization(1) =  0.60
+    starting_magnetization(2) = -0.60
+    starting_magnetization(3) =  0.00
+/
+&ELECTRONS
+    conv_thr         = 1.0d-8
+    electron_maxstep = 200
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.10
+    mixing_ndim      = 8
+    diagonalization  = 'david'
+    diago_david_ndim = 2
+    startingpot      = 'atomic'
+    startingwfc      = 'atomic+random'
+/
+&IONS
+    ion_dynamics = 'bfgs'
+/
+ATOMIC_SPECIES
+Ni1    58.69340  ni_pbe_v1.4.uspp.F.UPF
+Ni2    58.69340  ni_pbe_v1.4.uspp.F.UPF
+O    15.99900  O.pbe-n-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS {angstrom}
+    4.1770000    4.1770000    0.0000000
+    2.0885000   -2.0885000    0.0000000
+    0.0000000    0.0000000   24.2655000
+
+ATOMIC_POSITIONS {angstrom}
+Ni1   0.0000000   0.0000000   9.0000000
+Ni2   2.0885000   2.0885000   9.0000000
+O     2.0885000   0.0000000   9.0000000
+O     4.1770000   2.0885000   9.0000000
+O     0.0000000   0.0000000  11.0885000
+O     2.0885000   2.0885000  11.0885000
+Ni2   2.0885000   0.0000000  11.0885000
+Ni1   4.1770000   2.0885000  11.0885000
+Ni2   0.0000000   0.0000000  13.1770000
+Ni1   2.0885000   2.0885000  13.1770000
+O     2.0885000   0.0000000  13.1770000
+O     4.1770000   2.0885000  13.1770000
+O     0.0000000   0.0000000  15.2655000
+O     2.0885000   2.0885000  15.2655000
+Ni1   2.0885000   0.0000000  15.2655000
+Ni2   4.1770000   2.0885000  15.2655000
+
+K_POINTS {automatic}
+4 8 1 0 0 0
+
+HUBBARD (ortho-atomic)
+U Ni1-3d 5.0
+U Ni2-3d 5.0

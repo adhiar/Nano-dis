@@ -1,0 +1,95 @@
+
+     Program BANDS v.7.4 starts on 15Sep2026 at 10:29:40 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    18 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      18
+     30785 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./outdir/NiO.save/
+     Message from routine volume:
+     axis vectors are left-handed
+     file O.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          47      24      7                 1840      657     106
+     Max          48      25      8                 1850      662     112
+     Sum         847     433    127                33149    11861    1973
+
+     Using Slab Decomposition
+
+
+     Check: negative core charge=   -0.000010
+     Reading collected, re-writing distributed wavefunctions
+     high-symmetry point:  0.0000 0.0000 0.0000   x coordinate   0.0000
+     high-symmetry point:  0.1179 0.1179 0.1179   x coordinate   0.2041
+     high-symmetry point: -0.1768-0.1768-0.1768   x coordinate   0.2041
+     high-symmetry point:  0.1179-0.1179-0.1179   x coordinate   0.5103
+     high-symmetry point:  0.2357 0.0000 0.0000   x coordinate   0.7144
+     high-symmetry point: -0.0589-0.2946-0.2946   x coordinate   0.7144
+     high-symmetry point:  0.0589-0.1768-0.1768   x coordinate   0.9186
+     high-symmetry point:  0.2357-0.2357-0.2357   x coordinate   1.1140
+     high-symmetry point:  0.3536-0.1179-0.1179   x coordinate   1.3181
+     high-symmetry point:  0.0589-0.4125-0.4125   x coordinate   1.3181
+     high-symmetry point:  0.1768-0.2946-0.2946   x coordinate   1.5222
+     high-symmetry point: -0.3536 0.3536 0.3536   x coordinate   1.5222
+     high-symmetry point: -0.2357 0.4714 0.4714   x coordinate   1.7264
+     high-symmetry point: -0.5303 0.1768 0.1768   x coordinate   1.7264
+     high-symmetry point:  0.1768-0.0589-0.2946   x coordinate   1.7264
+     high-symmetry point:  0.2357 0.0000-0.2357   x coordinate   1.8284
+     high-symmetry point: -0.0000-0.2357-0.4714   x coordinate   2.2367
+     high-symmetry point:  0.0589-0.1768-0.4125   x coordinate   2.3387
+     high-symmetry point:  0.2946-0.1768-0.4125   x coordinate   2.5744
+     high-symmetry point:  0.4125-0.0589-0.2946   x coordinate   2.7786
+     high-symmetry point:  0.1179-0.3536-0.5893   x coordinate   3.2889
+     high-symmetry point:  0.2357-0.2357-0.4714   x coordinate   3.4930
+     high-symmetry point:  0.3536-0.1179-0.5893   x coordinate   3.6971
+     high-symmetry point:  0.4125-0.0589-0.5303   x coordinate   3.7992
+
+     Plottable bands (eV) written to file Nio_spin_up.bands.gnu
+     Bands written to file Nio_spin_up.bands
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+     Message from routine scale_sym_ops:
+     found rotation not compatible with FFT grid
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine scale_sym_ops (8):
+     incompatible FFT grid
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...

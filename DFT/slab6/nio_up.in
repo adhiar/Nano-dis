@@ -1,0 +1,6 @@
+&BANDS
+outdir       = './tmp'
+prefix       = 'NiO100_6L_PBEU5_relax'
+    filband        = 'Nio_spin_up.bands'
+    spin_component = 1
+/

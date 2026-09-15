@@ -1,0 +1,6 @@
+&BANDS
+    outdir       = "./outdir"
+    prefix       = "NiO"
+    filband        = 'Nio_spin_down.bands'
+    spin_component = 2
+/ 

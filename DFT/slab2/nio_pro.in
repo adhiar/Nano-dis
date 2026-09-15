@@ -1,0 +1,6 @@
+&PROJWFC
+prefix       = 'NiO100_2L_PBEU5'
+outdir       = './tmp'
+    filpdos = 'bulk_pdos'
+    DeltaE  = 0.01
+/

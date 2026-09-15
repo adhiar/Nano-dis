@@ -1,0 +1,7 @@
+Energy reference (eV): 17.82450000
+Reference source: command line
+VBM (eV): 17.78780000
+CBM (eV): 17.84150000
+Band gap Eg (eV): 0.05370000
+Method: computed from band eigenvalues around the energy reference
+Metallic/zero-gap: False

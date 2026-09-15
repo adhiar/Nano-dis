@@ -1,0 +1,5 @@
+EF = 2.50440000 eV
+
+Spin up:   VBM=1.1138 CBM=3.4032 Eg=2.2894 eV
+Spin down: VBM=1.1138 CBM=3.4032 Eg=2.2894 eV
+Overall:   VBM=1.1138 CBM=3.4032 Eg=2.2894 eV

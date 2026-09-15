@@ -1,0 +1,59 @@
+&CONTROL
+    calculation  = "bands"
+    max_seconds  =  8.64000e+04
+    outdir       = "./outdir"
+    prefix       = "NiO"
+    pseudo_dir   = "./pseudopot/"
+    restart_mode = "from_scratch"
+    tprnfor      = .TRUE.
+/
+
+&SYSTEM
+    ibrav     = 0
+    nat       = 4
+    ntyp      = 3
+    ecutwfc   = 50
+    ecutrho   = 400
+    nspin     = 2
+nbnd = 36
+    input_dft = 'PBE'
+    occupations = 'smearing'
+smearing = 'gaussian'
+degauss=0.001
+    starting_magnetization(1) =  0.60
+    starting_magnetization(2) = -0.60
+    starting_magnetization(3) =  0.00
+/
+&ELECTRONS
+    conv_thr         = 1.0d-8
+    electron_maxstep = 200
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.10
+    mixing_ndim      = 8
+    diagonalization  = 'david'
+    diago_david_ndim = 2
+    startingpot      = 'atomic'
+    startingwfc      = 'atomic+random'
+/
+ATOMIC_SPECIES
+Ni1    58.69340  ni_pbe_v1.4.uspp.F.UPF
+Ni2    58.69340  ni_pbe_v1.4.uspp.F.UPF
+O      15.99900  O.pbe-n-kjpaw_psl.1.0.0.UPF
+
+CELL_PARAMETERS {angstrom}
+    0.0000000    2.0885000   -2.0885000
+    2.0885000   -2.0885000    0.0000000
+    4.1770000    2.0885000    2.0885000
+
+ATOMIC_POSITIONS {crystal}
+Ni1   0.0000000   0.0000000   0.0000000
+Ni2   0.5000000   0.0000000   0.5000000
+O     0.2500000   0.5000000   0.2500000
+O     0.7500000   0.5000000   0.7500000
+
+K_POINTS {automatic}
+6 6 6 0 0 0
+
+HUBBARD (ortho-atomic)
+U Ni1-3d 5.0
+U Ni2-3d 5.0

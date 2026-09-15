@@ -1,0 +1,66 @@
+&CONTROL
+    calculation  = "scf"
+    max_seconds  =  8.64000e+04
+    outdir       = "./outdir"
+    prefix       = "Ni"
+    pseudo_dir   = "./pseudopot/"
+    restart_mode = "from_scratch"
+    tprnfor      = .TRUE.
+/
+
+&SYSTEM
+    ibrav     = 0
+    nat       = 4
+    ntyp      = 1
+
+    ecutwfc   = 50
+    ecutrho   = 400
+
+    nspin     = 2
+    input_dft = 'PBE'
+
+    occupations = 'smearing'
+    smearing = 'mv'
+    degauss = 0.02
+
+    starting_magnetization(1) = 0.60
+/
+
+&ELECTRONS
+    conv_thr         = 1.0d-8
+    electron_maxstep = 200
+
+    mixing_mode      = 'plain'
+    mixing_beta      = 0.10
+    mixing_ndim      = 8
+
+    diagonalization  = 'david'
+    diago_david_ndim = 2
+
+    startingpot      = 'atomic'
+    startingwfc      = 'atomic+random'
+/
+
+ATOMIC_SPECIES
+
+Ni   58.69340   ni_pbe_v1.4.uspp.F.UPF
+
+
+CELL_PARAMETERS {angstrom}
+
+3.5209400    0.0000000    0.0000000
+0.0000000    3.5209400    0.0000000
+0.0000000    0.0000000    3.5209400
+
+
+ATOMIC_POSITIONS {crystal}
+
+Ni   0.0000000   0.0000000   0.0000000
+Ni   0.0000000   0.5000000   0.5000000
+Ni   0.5000000   0.0000000   0.5000000
+Ni   0.5000000   0.5000000   0.0000000
+
+
+K_POINTS {automatic}
+
+6 6 6 0 0 0

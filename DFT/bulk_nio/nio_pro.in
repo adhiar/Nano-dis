@@ -1,0 +1,6 @@
+&PROJWFC
+    prefix  = 'NiO'
+    outdir  = './outdir'
+    filpdos = 'bulk_pdos'
+    DeltaE  = 0.01
+/
