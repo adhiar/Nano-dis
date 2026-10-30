@@ -1,4 +1,4 @@
-<div align="center">
+<div align="justify">
 
 Use the navigation below to jump directly to a research area, compare saved figures, or find the underlying data and model outputs.
 
