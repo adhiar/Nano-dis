@@ -56,7 +56,7 @@ Folders include available band-structure, DOS/PDOS, and supporting calculation a
 
 ## 👤 Maintainer
 
-**[adhiar](https://github.com/adhiar)** · [Repository](https://github.com/adhiar/Nano-dis) · [Issues](https://github.com/adhiar/Nano-dis/issues)
+**[I M. Adhi Aryadi](https://github.com/adhiar)** · [Repository](https://github.com/adhiar/Nano-dis) · [Issues](https://github.com/adhiar/Nano-dis/issues)
 
 ---
 
